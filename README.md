@@ -1,1 +1,1 @@
-# CrafyHub
+# CraftHub
