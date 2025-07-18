@@ -1,0 +1,21 @@
+<h2>Add student</h2>
+<form action="/insstd/" method="post">
+    {% csrf_token %}
+    <p>Name</p>
+    <p><input type="text" name = "name"/></p>
+    <p>DOB</p>
+    <p><input type="date" name = "dob"/></p>
+    <p>Gender</p>
+    <p><label/><input type="radio" name="gender" value="Male"/>Male</p>
+    <p><label/><input type="radio" name="gender" value="Female"/>Female</p>
+    <p>Stream</p>
+    <p>
+        <select name="stream">
+            <option value="">-Select Stream-</option>
+            <option value="BCA">BCA</option>
+            <option value="BBA">BBA</option>
+            <option value="B.Tech">B.tech</option>
+        </select>
+    </p>
+    <p><input type="submit" name="save" value="Add student"/></p>
+</form>
